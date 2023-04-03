@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>League Helper</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simpledotcss/simple.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body>
+    <header class="league-helper">
+      <h1>League Helper</h1>
+      <form id="search">
+        <label for="search-input">Find a Champion</label>
+        <input id="search-input" name="search-input" type="text" required />
+        <input type="submit" value="Search Champ" />
+      </form>
+      <p>OR</p>
+      <form id="difficulty-filter">
+        <label for="dif-number">search by difficulty(0-10):</label>
+        <input
+          id="dif-number"
+          type="number"
+          name="difficulty"
+          step="1"
+          min="1"
+          max="10"
+          value="1"
+        />
+        <input type="submit" value="submit" />
+      </form>
+    </header>
+    <main>
+      <article class="champion-main">
+        Search for a champion to get some help!
+      </article>
+      <div class="hover-info"></div>
+      <div class="tips">
+        <article class="ally-tips"></article>
+        <article class="enemy-tips"></article>
+      </div>
+    </main>
+    <footer>
+      <h3>Created by Michael Reyes</h3>
+      <p><a href="about.html">About</a></p>
+      <p>
+        © Riot Games, Inc. All rights reserved. 'Riot Games', 'League of
+        Legends', and 'PvP.net' are trademarks, services marks, or registered
+        trademarks of Riot Games, Inc.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -91,8 +91,10 @@ function champSearcher(champion, input) {
   if (name.includes("'") || name.includes(".")) {
     urlName = name.replace(/[^a-zA-Z0-9 ]/g, "-");
     urlName = urlName.replace(" ", "");
-  } else if (urlName.includes(" ")) {
-    urlName = urlName.replace(" ", "-");
+  } else if (name.includes(" ")) {
+    urlName = name.replace(" ", "-");
+  } else {
+    urlName = name;
   }
   console.log(urlName);
   const officalUrl = `https://www.leagueoflegends.com/en-us/champions/${urlName}/`;
